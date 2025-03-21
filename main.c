@@ -25,47 +25,12 @@ typedef struct {
     char situacao[10];
 } cadastro;
 
-//criação e/ou abertura dos arquivos para serem manipulados
-void carregar_arquivo(){ 
-    printf("EM construcao\n");
-}
-
-//cadastra os dados de um novo aluno no arquivo
-void add_informacao(){
-    printf("EM construcao\n");
-}
-
-//Função Menu mostra as opções de funcionalidade do sistema
-void Menu(){
-    int op;
-    printf("Bem-Vindo ao Cadrasto Alunos\n");
-    do{
-     printf("Digite '1' carregar_arquivo - criacao e/ou abertura dos arquivos \n ");
-     printf("Digite '2' add_informacao - cadastra os dados de um novo aluno  \n ");
-     printf("Digite '3' para Sair \n");
-     scanf("%d",&op);
-     switch (op)
-     {
-        case 1:
-        carregar_arquivo();
-            break;
-        case 2:
-        add_informacao();
-            break;
-        case 3:
-            printf("Saindoooo.......\n");
-                break;
-        default:
-        printf("Digite o numero invalido\n");
-            break;
-     }
-
-
-    }while (op!=3);
+void Cadastro(){ 
     
 }
+
 int main () {
     setlocale(LC_ALL, "Portuguese");
     cadastro Cadastro;
-    Menu();
+
 }
